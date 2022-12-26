@@ -14,7 +14,7 @@ img {
     margin-left: 20px;
 }
 
-.model {
+.modal-button, .sub-button {
     background-color: #6971fa;
     height: 40px;
     width: 180px;
@@ -24,4 +24,15 @@ img {
 
 .text-blue {
     color: #6971fa;
+}
+
+.form-control {
+   background-color: #242430;
+   border: none;
+}
+
+label {
+    font-size: large;
+    color: #706e85;
+    font-weight: 580;
 }
