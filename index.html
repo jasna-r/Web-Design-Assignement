@@ -4,121 +4,198 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Apple- Magic Magic 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Apple- Magic Magic 2</title>
   </head>
   <body class="bg-dark">
-    <header class="container">
-      <div class="row" style="margin-top: 20px ;">
-      <p class="col-6 logo">Logo<br />Goes here</p>
-      <p class="col-6 text-secondary" style="text-align: end;">Cart</p>
-    </div>
-      <button></button>
+    <header class="container-fluid">
+      <div class="row" style="margin-top: 20px">
+        <p
+          class="col-6 logo"
+          style="
+            color: #727692;
+            font-weight: 700;
+            font-size: 20px;
+            height: 60px;
+          "
+        >
+          Logo<br />Goes here
+        </p>
+        <p class="col-6 text-white text-right font-weight-bold">
+          Cart
+          <span class="badge badge-primary badge-pill">1</span>
+        </p>
+      </div>
 
-      <h1>
-        Apple -<br />
-        Magic Magic 2<br />Space Grey
-      </h1>
+      <div class="row">
+        <h1 class="col-6 d-flex justify-content-center">
+          Apple -<br />
+          Magic Magic 2<br />Space Grey
+        </h1>
+        <img class="col-6" src="assets/images/mouse-cropped2.jpg" />
+      </div>
     </header>
 
-    <section class="grid-container">
-      <h1>Grid</h1>
+    <section class="container">
+      <h1 class="text-center">Grid</h1>
       <p class="text-secondary">Bellow presented responsive gallery</p>
-      <img />
-      <img />
-      <img />
-      <img />
+
+      <div class="row">
+        <div class="col-6">
+          <img src="assets/images/ipads-cropped2.jpg" />
+        </div>
+
+        <div class="col-6">
+          <div class="row">
+            <div class="col-12">
+              <img src="assets/images/apple_1_smaller.jpg" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <img src="assets/images/iphone-cropped2.jpg" />
+            </div>
+            <div class="col-6">
+              <img src="assets/images/watch-cropped2.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <nav>
-      <a>Home</a>
-      <a>Store</a>
-      <a>About</a>
-      <a>Contact</a>
+    <nav
+      class="container navbar navbar-expand-sm justify-content-end fixed-top"
+    >
+      <div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <section>
-      <h1>About</h1>
-      <p class="text-secondary">Express yourself! Write your own <i>lorem ispum text...</i></p>
-      <div>
-      <h3>new heading</h3>
-      <h4>create/design content</h4>
-      <p class="text-secondary">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vel ab,
-        ullam officia sit ad impedit consequuntur nihil vero. Magni voluptas
-        perspiciatis voluptates ab obcaecati autem delectus fugiat libero?
-        Obcaecati.
-      </p>
+    <section class="container about">
+      <div class="heading-container">
+        <div
+          class="text-center"
+          style="padding-bottom: 50px; padding-top: 50px"
+        >
+          <h1 style="font-weight: bolder; font-size: 65px;">About</h1>
+          <p>
+            Express yourself! Write your own <i>lorem ispum text...</i>
+          </p>
+        </div>
+        <div>
+          <h3 class="h3">
+           <span class="text-blue">NEW</span> HEADING</h3>
+          <h5>CREATE/DESIGN CONTENT</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <p class="text-secondary heading-container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vel
+            ab, ullam officia sit ad impedit consequuntur nihil vero. Magni
+            voluptas perspiciatis voluptates ab obcaecati autem delectus fugiat
+            libero? Obcaecati.
+          </p>
 
-      <ul>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Lorem ipsum dolor sit amet</li>
-      </ul>
-    </div>
-    <div>
-      <button>Open Modal</button>
-    </div>
-
-    <div>
-        <table>
-            <thead>
-                <th>Item</th>
-                <th>Description</th>
-                <th>Price</th>
-                <tbody>
-                    <tr>
-                        <td>Item title</td>
-                        <td>Here goes item description in my fancy table</td>
-                        <td>100.00$</td>
-                    </tr>
-                    <tr>
-                        <td>Item title</td>
-                        <td>Here goes item description in my fancy table</td>
-                        <td>10.00$</td>
-                    </tr>
-                    <tr>
-                        <td>Item title</td>
-                        <td>Here goes item description in my fancy table</td>
-                        <td>5287.00$</td>
-                    </tr>
-                    <tr>
-                        <td>Item title</td>
-                        <td>Here goes item description in my fancy table</td>
-                        <td>412.00$</td>
-                    </tr>
-                </tbody>
-            </thead>
-        </table>
-    </div>
-
-
+          <div class="heading-container text-secondary">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <!-- </ul> -->
+          </div>
+        </div>
+        <div class="col-4 text-right">
+          <button class="model">Open Modal</button>
+        </div>
+      </div>
     </section>
 
-    <section>
-    <h1></h1>
-    <div>
-    <form>
-        <label>Full Name</label>
-        <input type="name" placeholder="Name">
-        <label>E-mail</label>
-        <input type="e-mail" placeholder="E-mail Address">
-        <label>Contact Phone</label>
-        <input type="phone number" placeholder="Phone Number">
-        <label>Comment</label>
-        <textarea>Message...</textarea>
-        <button>Send</button>
-    </form>
-</div>
-<div>
-    <h5>Get in touch</h5>
-    <p>Lorem ipsum dolor sit, amet consectetur 
-        adipisicing elit. Vel, amet consectetur aliquam reiciendis,
-         fuga blanditiis eius facere optio, mollitia non suscipit?
-          Dolor ea commodi similique atque quidem, exercitationem explicabo aspernatur.</p>
-          <a></a>
-</div>
-</section>
-<script src="bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
-</body>
+
+    <div class="container table-responsive">
+        <table class="table table-hover table-dark">
+          <thead style="border-bottom:3px solid #727692 ;">
+            <th scope="col">Item</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+          </thead>
+          <tbody class="text-secondary">
+            <tr>
+              <td>Item title</td>
+              <td>Here goes item description in my fancy table</td>
+              <td>100.00$</td>
+            </tr>
+            <tr>
+              <td>Item title</td>
+              <td>Here goes item description in my fancy table</td>
+              <td>10.00$</td>
+            </tr>
+            <tr>
+              <td>Item title</td>
+              <td>Here goes item description in my fancy table</td>
+              <td>5287.00$</td>
+            </tr>
+            <tr>
+              <td>Item title</td>
+              <td>Here goes item description in my fancy table</td>
+              <td>412.00$</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> 
+
+     <!-- <section class="container">
+      <h1></h1>
+      <div>
+        <form>
+          <label>Full Name</label>
+          <input type="name" placeholder="Name" />
+          <label>E-mail</label>
+          <input type="e-mail" placeholder="E-mail Address" />
+          <label>Contact Phone</label>
+          <input type="phone number" placeholder="Phone Number" />
+          <label>Comment</label>
+          <textarea>Message...</textarea>
+          <button>Send</button>
+        </form>
+      </div>
+      <div>
+        <h5>Get in touch</h5>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, amet
+          consectetur aliquam reiciendis, fuga blanditiis eius facere optio,
+          mollitia non suscipit? Dolor ea commodi similique atque quidem,
+          exercitationem explicabo aspernatur.
+        </p>
+        <a></a>
+      </div>
+    </section> -->
+    <script
+      src="bootstrap/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

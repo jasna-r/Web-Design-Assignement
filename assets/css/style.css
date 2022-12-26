@@ -1,7 +1,27 @@
-body h1 {
+body {
 color: beige;
+font-family: 'Questrial', sans-serif;
 }
-.logo {
-    color: #727692;
-    
+
+img {
+    width: 100%;
+}
+
+.about {
+    background-color: #20202c;
+}
+.heading-container{ 
+    margin-left: 20px;
+}
+
+.model {
+    background-color: #6971fa;
+    height: 40px;
+    width: 180px;
+    color: white;
+    border: none;
+}
+
+.text-blue {
+    color: #6971fa;
 }
