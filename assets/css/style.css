@@ -1,12 +1,31 @@
 body {
+background-color: black;
 color: beige;
 font-family: 'Questrial', sans-serif;
 }
 
-img {
+a {
+    color: #727693;
+}
+a:hover {
+    color: beige;
+    font-weight: bold;
+}
+.gallery-full-width {
     width: 100%;
 }
 
+.carousel-item {
+    background-image: url(assets/images/mouse-cropped2-removebg-preview.png);
+    height: 100vh;
+    min-height: 350px;
+    /* height: 500px; */
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 .about {
     background-color: #20202c;
 }
