@@ -1,9 +1,13 @@
 body {
-background-color: black;
+background-color: #1f1f1f;
+background-color: aliceblue;
 color: beige;
 font-family: 'Questrial', sans-serif;
 }
 
+.gallery, .contact {
+    background-color: #2a2a36;
+}
 a {
     color: #727693;
 }
@@ -26,18 +30,15 @@ a:hover {
     -o-background-size: cover;
     background-size: cover;
   }
-.about {
+.about, .navbar {
     background-color: #20202c;
 }
-.heading-container{ 
-    margin-left: 20px;
-}
 
-.modal-button, .sub-button {
-    background-color: #6971fa;
-    height: 40px;
-    width: 180px;
-    color: white;
+.modal-button {
+    background-color: #5156b2;
+    height: 3.75rem;
+    width: 16.876rem;
+    color: #ffff;
     border: none;
 }
 
@@ -45,9 +46,22 @@ a:hover {
     color: #6971fa;
 }
 
+.heading-container {
+    font-size: 1.25rem;
+    /* font-size: 20px; */
+}
+
+.form-control:focus {
+    border:#434572 ;
+    background-color: #2a2a36 ;
+    color: #ffff;
+    border-radius: 0;
+}
+
 .form-control {
-   background-color: #242430;
-   border: none;
+    background-color: #242430;
+    border-radius: 0;
+    border: none;    
 }
 
 label {
@@ -55,3 +69,45 @@ label {
     color: #706e85;
     font-weight: 580;
 }
+
+.sub-button {
+    height: 3.75rem;
+    width: 10.625rem;
+    background-color: #5156b2;
+    color: #ffff;
+    border-radius: 0;
+    font-size: 1.25rem;
+    text-align: center;
+
+}
+
+.text-paragraph {
+    font-size: 1.25rem;
+    /* font-size: 20px; */
+}
+.contact-heading {
+    font-size: 1.625rem;
+    /* font-size: 26px; */
+}
+
+/* input[type=text] {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+   
+  } */
+
+/* input[type=text]:focus {
+    border: 3px solid #555;
+    
+  } */
+nav .navbar {
+    height: 70px;
+    /* font-size: 18px; */
+}
+

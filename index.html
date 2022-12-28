@@ -82,11 +82,11 @@
     </header>
 
     <nav
-      class="container navbar navbar-expand-sm justify-content-end sticky-top text-secondary font-weight-bold py-0"
+      class="container-fluid navbar navbar-expand-sm sticky-top text-secondary font-weight-bold px-4 "
       style="background-color: #20202c"
     >
-      <div class="container justify-content-end">
-        <ul class="navbar-nav ms-auto">
+      <!-- <div class="container"> -->
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link text-reset" href="#">Home</a>
           </li>
@@ -100,56 +100,51 @@
             <a class="nav-link text-reset" href="#">Contact</a>
           </li>
         </ul>
-      </div>
+      <!-- </div> -->
     </nav>
+<div class="py-5 px-5">
+    <h1 class="text-center" style="font-size: 60px">Grid</h1>
+    <p class="text-secondary text-center">
+      Bellow presented responsive gallery
+    </p>
 
-    <section class="container">
-      <h1 class="text-center">Grid</h1>
-      <p class="text-secondary">Bellow presented responsive gallery</p>
-
-      <div class="row">
-        <div class="col">
+    <section class="container gallery">
+      <div class="row py-4">
+        <div class="col-6 pl-0">
           <img
+            style="height: 550px; width: 570px"
             class="gallery-full-width"
-            src="assets/images/ipads-cropped2.jpg"
+            src="assets/images/big-one.jpg"
           />
         </div>
 
-        <div class="col">
+        <div class="col-6">
           <div class="row">
-            <div class="col">
-              <img
-                class="gallery-full-width"
-                src="assets/images/apple_1_smaller.jpg"
-              />
+            <div class="col pr-0">
+              <img class="gallery-full-width" src="assets/images/small-1.jpg" />
+            </div>
+            <div class="col pr-0">
+              <img class="gallery-full-width" src="assets/images/small-2.jpg" />
             </div>
           </div>
 
-          <div class="row" style="padding-top: 15px">
-            <div class="col">
+          <div class="row">
+            <div class="col-12 pt-3 pr-0">
               <img
                 class="gallery-full-width"
-                src="assets/images/iphone-cropped2.jpg"
-              />
-            </div>
-            <div class="col">
-              <img
-                class="gallery-full-width"
-                src="assets/images/watch-cropped2.jpg"
+                src="assets/images/monitor-cropped1.jpg"
               />
             </div>
           </div>
         </div>
       </div>
     </section>
+  </div>
 
-    <section class="container about py-5">
+    <section class="container about py-5 px-5">
       <div class="heading-container">
-        <div
-          class="text-center"
-          style="padding-bottom: 50px; padding-top: 50px"
-        >
-          <h1 style="font-weight: bolder; font-size: 65px">About</h1>
+        <div class="text-center">
+          <h1 style="font-weight: bolder; font-size: 60px">About</h1>
           <p>Express yourself! Write your own <i>lorem ispum text...</i></p>
         </div>
         <div>
@@ -172,15 +167,27 @@
             <!-- </ul> -->
           </div>
         </div>
-        <div class="col-4 ">
+        <div class="col-4">
           <button class="modal-button">Open Modal</button>
         </div>
       </div>
     </section>
 
-    <div class="container table-responsive" style="background-color: #20202c;">
-      <table class="table table-hover table-dark" style="background-color: #20202c; border-top: none;">
-        <thead style="border-bottom: 3px solid #727692; border-top: none; font-weight: bold;">
+    <div
+      class="container table-responsive py-5 px-5"
+      style="background-color: #20202c"
+    >
+      <table
+        class="table table-hover table-dark"
+        style="background-color: #20202c; border-top: none"
+      >
+        <thead
+          style="
+            border-bottom: 3px solid #727692;
+            border-top: none;
+            font-weight: bold;
+          "
+        >
           <th scope="col">Item</th>
           <th scope="col">Description</th>
           <th scope="col">Price</th>
@@ -210,37 +217,30 @@
       </table>
     </div>
 
-    <section class="container contact">
-      <h1 style="font-weight: bolder; font-size: 65px" class="text-center">
+    <section class="container contact py-5 px-5">
+      <h1 style="font-weight: bolder; font-size: 60px" class="text-center">
         Contact
       </h1>
       <div class="row">
-        <div class="col-6">
-          <form>
-            <label>Full Name</label>
+        <div class="col-6 pr-3">
+          <form class="mx-5">
+            <label class="mb-1">Full Name</label>
+            <input class="form-control" type="name" placeholder="Name" />
+            <label class="mb-1 pt-3">E-mail</label>
             <input
-              onfocus="myFunction(this);"
-              class="form-control"
-              type="name"
-              placeholder="Name"
-            />
-            <label>E-mail</label>
-            <input
-              onfocus="myFunction(this);"
               class="form-control"
               type="e-mail"
               placeholder="E-mail Address"
             />
-            <label>Contact Phone</label>
+            <label class="mb-1 pt-3">Contact Phone</label>
             <input
-              onfocus="myFunction(this);"
               class="form-control"
               type="phone number"
               placeholder="Phone Number"
             />
-            <label>Comment</label>
-            <textarea onfocus="myFunction(this)" class="form-control">
-Message...</textarea
+            <label class="mb-1 pt-3">Comment</label>
+            <textarea class="form-control">
+                      Message...</textarea
             >
             <div>
               <br />
@@ -249,8 +249,8 @@ Message...</textarea
           </form>
         </div>
         <div class="col-6">
-          <h3 class="h3">Get in touch</h3>
-          <p class="text-secondary">
+          <h3 class="h3 contact-heading">Get in touch</h3>
+          <p class="text-secondary contact-paragraph">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, amet
             consectetur aliquam reiciendis, fuga blanditiis eius facere optio,
             mollitia non suscipit? Dolor ea commodi similique atque quidem,
