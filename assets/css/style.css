@@ -6,7 +6,7 @@ font-family: 'Questrial', sans-serif;
 }
 
 .gallery, .contact {
-    background-color: #2a2a36;
+    background-color: #272731;
 }
 a {
     color: #727693;
@@ -37,7 +37,8 @@ a:hover {
 .modal-button {
     background-color: #5156b2;
     height: 3.75rem;
-    width: 16.876rem;
+    width: 10.625rem;
+    border-radius: 0;
     color: #ffff;
     border: none;
 }

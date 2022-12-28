@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <title>Magic Magic 2</title>
   </head>
   <body>
@@ -112,11 +113,11 @@
     </header>
 
     <nav
-      class="container-fluid navbar navbar-expand-lg sticky-top text-secondary font-weight-bold px-4"
+      class="container-fluid navbar navbar-expand-lg sticky-top text-secondary font-weight-bold px-4 pr-1"
       style="background-color: #20202c"
     >
       <!-- <div class="container"> -->
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto container justify-content-end ml-5">
         <li class="nav-item">
           <a class="nav-link text-reset" href="#">Home</a>
         </li>
@@ -132,7 +133,9 @@
       </ul>
       <!-- </div> -->
     </nav>
-    <div class="py-5 px-5">
+
+    
+    <div class="py-5 px-5 gallery">
       <h1 class="text-center" style="font-size: 60px">Grid</h1>
       <p class="text-secondary text-center">
         Bellow presented responsive gallery
@@ -142,7 +145,7 @@
         <div class="row py-4">
           <div class="col-6 pl-0">
             <img
-              style="height: 550px; width: 570px"
+              
               class="gallery-full-width"
               src="assets/images/big-one.jpg"
             />
@@ -177,40 +180,67 @@
       </section>
     </div>
 
-    <section class="container about py-5 px-5">
+
+<div class="about">
+    <section class="container about py-5">       
       <div class="heading-container">
         <div class="text-center">
           <h1 style="font-weight: bolder; font-size: 60px">About</h1>
           <p>Express yourself! Write your own <i>lorem ispum text...</i></p>
         </div>
-        <div>
+        <div>          
           <h3 class="h3"><span class="text-blue">NEW</span> HEADING</h3>
           <h5>CREATE/DESIGN CONTENT</h5>
         </div>
       </div>
       <div class="row">
-        <div class="col-8">
-          <p class="text-secondary heading-container">
+        
+        <div class="col-7 pl-sm-0 pl-md-3 ">
+          <p class="text-secondary text-left heading-container">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vel
             ab, ullam officia sit ad impedit consequuntur nihil vero. Magni
             voluptas perspiciatis voluptates ab obcaecati autem delectus fugiat
             libero? Obcaecati.
           </p>
-
+          
           <div class="heading-container text-secondary">
             <li>Lorem ipsum dolor sit amet</li>
             <li>Lorem ipsum dolor sit amet</li>
             <!-- </ul> -->
           </div>
         </div>
-        <div class="col-4">
-          <button class="modal-button">Open Modal</button>
+        <div class="col-5">
+          <button class="btn modal-button float-right" data-toggle="modal" data-target="#exampleModal">Open Modal</button>
+        </div>
+        <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content bg-dark">
+              <div class="modal-header justify-content-center bg-dark">
+                <h5 class="modal-title" id="exampleModalLabel">About</h5>
+               
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ... <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vel
+                  ab, ullam officia sit ad impedit consequuntur nihil vero. Magni
+                  voluptas perspiciatis voluptates ab obcaecati autem delectus fugiat
+                  libero? Obcaecati.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                 style="background-color: #5156b2; border-radius: 0;">Close Modal</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    
     </section>
 
     <div
-      class="container table-responsive py-5 px-5"
+      class="container table-responsive py-5 px-3"
       style="background-color: #20202c"
     >
       <table
@@ -221,7 +251,6 @@
           style="
             border-bottom: 3px solid #727692;
             border-top: none;
-            font-weight: bold;
           "
         >
           <th scope="col">Item</th>
@@ -253,6 +282,9 @@
       </table>
     </div>
 
+  </div>
+
+  <div class="contact">
     <section class="container contact py-5 px-5">
       <h1 style="font-weight: bolder; font-size: 60px" class="text-center">
         Contact
@@ -310,6 +342,7 @@
         </div>
       </div>
     </section>
+  </div>
     <script
       src="bootstrap/js/bootstrap.min.js"
       crossorigin="anonymous"
