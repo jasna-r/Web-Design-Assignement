@@ -119,3 +119,9 @@ nav .navbar {
 .vertical-line {
     border-left: 1px solid #5156b2;
 }
+
+.carousel-control .icon-prev, .carousel-control .icon-next {
+    font-size: 100px; 
+    margin-top: -50px;
+    color: #fff;
+}
