@@ -17,6 +17,7 @@ a:hover {
 }
 .gallery-full-width {
     width: 100%;
+    object-fit: cover;
 }
 
 .carousel-item {
@@ -29,6 +30,9 @@ a:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+  }
+  .carousel-item img {
+    opacity: 0.6;
   }
 .about, .navbar {
     background-color: #20202c;
@@ -125,3 +129,9 @@ nav .navbar {
     margin-top: -50px;
     color: #fff;
 }
+
+.carousel-control-prev-right {
+    left: unset;
+    right: 0;
+    padding-top: 5em;
+  }
