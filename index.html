@@ -22,20 +22,22 @@
     <title>Web Assignement</title>
   </head>
   <body>
-    <header style="background-image: url(assets/images/background.jpg)">
+    <header class="header-background">
       <div class="container-fluid">
         <div class="row py-3 mx-3">
           <div class="col py-2">
             <img
-              class="bi bi-apple"
+              class="bi bi-apple header-logo"
               src="assets/images/apple.svg"
               alt="apple-logo"
-              style="height: 60px; width: 60px; color: #6971fa"
             />
-            <p class="col-6 text-white text-right font-weight-bold float-right pt-4 h5 pr"
-              style="height: 60px; font-size: 1.625rem;">
+            <p
+              class="col-6 text-white text-right font-weight-bold float-right pt-4 h5 pr header-text"
+            >
               <span class="px-4">Cart</span>
-              <span id="cardHolder" class="badge badge-primary badge-pill">0</span>
+              <span id="cardHolder" class="badge badge-primary badge-pill"
+                >0</span
+              >
             </p>
           </div>
         </div>
@@ -51,32 +53,28 @@
             <div class="carousel-item active">
               <div class="row">
                 <div
-                  class="col col-md-6 col-sm-12 text-sm-left d-flex flex-column justify-content-center align-content-center"
-                  style="flex-wrap: inherit"
+                  class="col col-md-6 col-sm-12 text-sm-left d-flex flex-column justify-content-center align-content-center slider-wrapper"
                 >
-                  <h1 class="h1" style="font-size: 8rem; font-weight: 1000">
-                    Apple-
-                  </h1>
-                  <h4 class="h4" style="font-size: 5rem; font-weight: 1000">
+                  <h1 class="h1 slider-title">Apple-</h1>
+                  <h4 class="h4 slider-text">
                     Magic Magic 2<br />
                     Space Grey
                   </h4>
-                  <br /><br /><br />
-                  <p>
+
+                  <p class="pt-4">
                     <span
-                      class="text-secondary text-reset font-weight-bold"
-                      style="font-size: 1.25rem"
+                      class="text-secondary text-reset font-weight-bold price-deleted"
                       ><del>$199,</del></span
                     >
                     <span
-                      class="text-reset font-weight-bold pl-sm-5 pb-sm-4 d-inline-block"
-                      style="font-size: 1.25rem; color: #6971fa"
+                      class="text-reset font-weight-bold pl-sm-5 pb-sm-4 d-inline-block price"
                       >$100,-</span
                     >
                   </p>
 
                   <div class="d-inline-block pt-4">
-                    <button onclick="addToCart();"
+                    <button
+                      onclick="addToCart();"
                       type="button"
                       class="btn btn-dark btn-circle btn-xl font-weight-bold d"
                     >
@@ -98,31 +96,26 @@
             <div class="carousel-item">
               <div class="row">
                 <div
-                  class="col-md-6 col-sm-12 text-sm-left d-flex flex-column justify-content-center align-content-center"
-                  style="flex-wrap: inherit"
+                  class="col-md-6 col-sm-12 text-sm-left d-flex flex-column justify-content-center align-content-center slider-wrapper"
                 >
-                  <h1 class="h1" style="font-size: 8rem; font-weight: 1000">
-                    Apple-
-                  </h1>
-                  <h4 class="h4" style="font-size: 6rem; font-weight: 1000">
+                  <h1 class="h1 slider-title">Apple-</h1>
+                  <h4 class="h4 slider-text">
                     AirPods 2<br />
                     White
                   </h4>
-                  <br /><br /><br />
                   <p>
                     <span
-                      class="text-secondary text-reset font-weight-bold"
-                      style="font-size: 1.25rem"
+                      class="text-secondary text-reset font-weight-bold price-deleted"
                       ><del>$129,</del></span
                     >
                     <span
-                      class="text-reset font-weight-bold pl-sm-5 d-inline-block"
-                      style="font-size: 1.25rem; color: #6971fa"
+                      class="text-reset font-weight-bold pl-sm-5 d-inline-block price"
                       >$100,-</span
                     >
                   </p>
                   <div class="d-inline-block pt-4">
-                    <button onclick="addToCart();"
+                    <button
+                      onclick="addToCart();"
                       type="button"
                       class="btn btn-dark btn-circle btn-xl font-weight-bold d"
                     >
@@ -130,7 +123,6 @@
                     </button>
                     <span class="pl-4 h4 font-weight-bold">ADD TO CART</span>
                   </div>
-                  
                 </div>
 
                 <div class="col-md-6 col-sm-12">
@@ -141,7 +133,7 @@
                   />
                 </div>
               </div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -164,10 +156,7 @@
     </header>
 
     <nav
-      class="container-fluid navbar navbar-expand-lg sticky-top text-secondary font-weight-bold px-4 pr-1 d-none d-lg-block"
-      style="background-color: #20202c"
-    >
-      <!-- <div class="container"> -->
+      class="container-fluid navbar navbar-expand-lg sticky-top text-secondary font-weight-bold px-4 pr-1 d-none d-lg-block">
       <ul class="navbar-nav ml-auto container justify-content-end ml-5">
         <li class="nav-item">
           <a class="nav-link text-reset" href="#">Home</a>
@@ -182,14 +171,11 @@
           <a class="nav-link text-reset" href="#">Contact</a>
         </li>
       </ul>
-      <!-- </div> -->
     </nav>
 
     <div class="py-5 px-5 gallery">
       <div class="pb-5">
-        <h1 class="text-center" style="font-weight: 1000; font-size: 60px">
-          Grid
-        </h1>
+        <h1 class="text-center gallery-title">Grid</h1>
         <p class="text-secondary text-center">
           Bellow presented responsive gallery
         </p>
@@ -198,10 +184,8 @@
         <div class="row">
           <div class="col-xl-6 col-md-12">
             <img
-              class="gallery-full-width"
-              src="assets/images/daniel-korpai-p91W9-rrhLA-unsplash.jpg"
-              style="height: 548px"
-            />
+              class="gallery-full-width left-large-image-grid-container"
+              src="assets/images/daniel-korpai-p91W9-rrhLA-unsplash.jpg"/>
           </div>
 
           <div class="col-xl-6 col-md-12 pb-md-4">
@@ -212,7 +196,7 @@
                   src="assets/images/small1_resized.jpg"
                 />
               </div>
-              <div class="col col-md-6 col-sm-12 ">
+              <div class="col col-md-6 col-sm-12">
                 <img
                   class="gallery-full-width"
                   src="assets/images/small2_resized.jpg"
@@ -235,12 +219,12 @@
 
     <div class="about">
       <section class="container about py-5">
-        <div class="heading-container">
+        <div class="about-heading-container">
           <div class="text-center pb-5">
-            <h1 style="font-weight: 1000; font-size: 60px">About</h1>
+            <h1 class="about-heading-container-title">About</h1>
             <p>Express yourself! Write your own <i>lorem ispum text...</i></p>
           </div>
-          <div class="pl-5" style="border-left: 2px solid #6971fa">
+          <div class="pl-5 design-title">
             <h3 class="h3"><span class="text-blue">NEW</span> HEADING</h3>
             <h5>CREATE/DESIGN CONTENT</h5>
           </div>
@@ -260,7 +244,6 @@
             <div class="heading-container text-secondary">
               <li>Lorem ipsum dolor sit amet</li>
               <li>Lorem ipsum dolor sit amet</li>
-              <!-- </ul> -->
             </div>
           </div>
           <div class="col-5 col-md-12 col-sm-12">
@@ -306,9 +289,8 @@
                 <div class="modal-footer">
                   <button
                     type="button"
-                    class="btn btn-secondary"
-                    data-dismiss="modal"
-                    style="background-color: #5156b2; border-radius: 0"
+                    class="btn btn-secondary button-modal-dismiss"
+                    data-dismiss="modal"  
                   >
                     Close Modal
                   </button>
@@ -319,15 +301,9 @@
         </div>
       </section>
 
-      <div
-        class="container table-responsive py-5 pl-5"
-        style="background-color: #20202c"
-      >
-        <table
-          class="table table-hover table-dark"
-          style="background-color: #20202c; border-top: none"
-        >
-          <thead style="border-bottom: 3px solid #727692; border-top: none">
+      <div class="container table-responsive py-5 pl-5">
+        <table class="table table-hover table-dark">
+          <thead>
             <th scope="col">Item</th>
             <th scope="col">Description</th>
             <th scope="col">Price</th>
@@ -360,7 +336,7 @@
 
     <div class="contact">
       <section class="container contact py-5 px-5">
-        <h1 style="font-weight: 1000; font-size: 60px" class="text-center pb-5">
+        <h1 class="text-center pb-5 contact-title">
           Contact
         </h1>
         <div class="row pb-5">
@@ -413,16 +389,14 @@
             </p>
             <div>
               <p>
-                <a
-                  style="display: block; color: #6971fa; text-decoration: none"
+                <a class="contact-links"             
                   href="mailto: info@blabla.mk"
                   >info@blabla.mk</a
                 >
               </p>
               <p>
-                <a
+                <a class="contact-links"
                   class="font-weight-bold"
-                  style="display: block; color: #6971fa; text-decoration: none"
                   href="tel:+38973222111"
                   >(389) 3222-111</a
                 >
@@ -435,98 +409,6 @@
         </div>
       </section>
     </div>
-
-    <!-- <div class="row d-flex">
-      <div class="col-sm-6 col-xs-12">
-        <img src="assets/images/big-original.jpg" alt="big one" style="max-width: 100%; max-height: fit-content; object-fit: cover;"/>
-      </div>
-      <div class="col-sm-6 col-xs-12" style="display: grid">
-        <div class="row">
-          <div class="col">
-            <img src="assets/images/smal-original2.jpg" alt="small" style="max-width: 100%; object-fit: cover;"/>
-          </div>
-          <div class="col">
-            <img src="assets/images/smal-original2.jpg" alt="small2" style="max-width: 100%; object-fit: cover;"/>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img src="assets/images/bottom-original.jpg" alt="bottom photo" style="max-width: 100%; object-fit: cover;"/>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- <div class="gallery">
-      <div class="">
-        <h1 class="text-center" style="font-weight: 1000; font-size: 60px">
-          Grid
-        </h1>
-        <p class="text-secondary text-center">
-          Bellow presented responsive gallery
-        </p>
-      </div>
-      <section class="container gallery d-flex">
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="assets/images/big-original.jpg"
-              alt="first"
-              style="max-width: 100%; object-fit: cover"
-            />
-          </div>
-
-          <div class="col-6">
-            <div class="row">
-              <div
-                class="col"
-                style="background-color: palevioletred; color: beige"
-              >
-                <img
-                  src="assets/images/smal-original2.jpg"
-                  alt="second"
-                  style="max-width: 100%; object-fit: cover"
-                />
-              </div>
-              <div
-                class="col"
-                style="background-color: rebeccapurple; color: beige"
-              >
-                <img
-                  src="assets/images/smal-original2.jpg"
-                  alt=""
-                  style="max-width: 100%; object-fit: cover"
-                />
-              </div>
-            </div>
-
-            <div
-              class="row"
-              style="background-color: yellowgreen; color: beige"
-            >
-              <div class="col">
-                <img
-                  src="assets/images/bottom-original.jpg"
-                  alt=""
-                  style="max-width: 100%; object-fit: cover"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div> -->
-
-    <!-- <div class="row">
-    <div class="col-sm-6 col-xs-12" style="background:red">red</div>
-    <div class="col-sm-6 col-xs-12">
-        <div class="row">
-            <div class="col" style="background:yellow">yellow</div>
-            <div class="col" style="background:pink">pink</div>
-        </div>
-        <div class="row" style="background:purple;color:white">purple</div>
-    </div>
-      </div> -->
     <script
       src="bootstrap/js/bootstrap.min.js"
       crossorigin="anonymous"

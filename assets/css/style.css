@@ -1,18 +1,23 @@
 body {
 background-color: #1f1f1f;
-/* background-color: aliceblue; */
 color: beige;
 font-family: 'Questrial', sans-serif;
 }
+
 .badge-pill {
-    background-color: #656ff9;
+    background-color: #5156b2;
 }
+.about, .navbar {
+    background-color: #20202c;
+}
+
 .gallery, .contact {
     background-color: #272731;
 }
 a {
     color: #727693;
 }
+
 a:hover {
     color: beige;
     font-weight: bold;
@@ -22,22 +27,69 @@ a:hover {
     object-fit: cover;
 }
 
+.header-background {
+    background-image: url(/assets/images/background.jpg);
+}
+
+.header-logo {
+    height: 60px;
+    width: 60px;
+}
+
+.header-text {
+    height: 60px;
+    font-size: 1.625rem"
+}
+
+.slider-wrapper {
+    flex-wrap: inherit;
+}
+
+.slider-title {
+    font-size: 8rem;
+    font-weight: 1000;
+}
+
+.slider-text {
+    font-size: 5rem; 
+    font-weight: 1000;
+}
+.price-deleted {
+    font-size: 1.25rem;
+}
+.price {
+    font-size: 1.25rem;
+    color: #5156b2;
+}
 .carousel-item {
     background-image: url(assets/images/mouse-cropped2-removebg-preview.png);
     height: 100vh;
     min-height: 350px;
-    /* height: 500px; */
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
   .carousel-item img {
     opacity: 0.6;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next {
+    font-size: 100px; 
+    margin-top: -50px;
+    color: #fff;
+}
+
+.carousel-control-prev-right {
+    left: unset;
+    right: 0;
+    padding-top: 5em;
   }
-.about, .navbar {
-    background-color: #20202c;
+
+  .carousel-control-next {
+    height:50%;    
+    align-items:end;
 }
 
 .modal-button {
@@ -49,17 +101,48 @@ a:hover {
     border: none;
 }
 
+.left-large-image-grid-container {
+    height: 548px;
+}
 .text-blue {
-    color: #6971fa;
+    color: #5156b2;
 }
 
-.heading-container {
+.about-heading-container {
     font-size: 1.25rem;
-        /* font-size: 20px; */
 }
 
+.design-title {
+    border-left: 2px
+     solid #5156b2;
+}
+
+.button-modal-dismiss {
+    background-color: #5156b2; 
+    border-radius: 0;
+}
+
+table {
+    background-color: #20202c;
+     border-top: none;
+}
+thead {
+    border-bottom: 3px solid #727692;
+     border-top: none;
+}
+
+.contact-title, .gallery-title, .about-heading-container-title {
+    font-weight: 1000;
+    font-size: 3.75rem;
+}
+
+.contact-links {
+    display: block;
+    color: #5156b2;
+    text-decoration: none"
+}
 .form-control:focus {
-    border:1px solid #424471;
+    border:1px solid #5156b2;
     background-color: #2a2a36 ;
     color: #ffff;
     border-radius: 0;
@@ -111,22 +194,7 @@ nav .navbar {
     border-left: 1px solid #5156b2;
 }
 
-.carousel-control .icon-prev, .carousel-control .icon-next {
-    font-size: 100px; 
-    margin-top: -50px;
-    color: #fff;
-}
 
-.carousel-control-prev-right {
-    left: unset;
-    right: 0;
-    padding-top: 5em;
-  }
-
-  .carousel-control-next {
-    height:50%;    
-    align-items:end;
-}
   .btn-circle.btn-xl {
     width: 60px;
     height: 60px;
@@ -139,5 +207,5 @@ nav .navbar {
 
 .sucess-alert {
     font-size: 1.25rem;
-    color: #6971fa;
+    color: #5156b2;
 }
