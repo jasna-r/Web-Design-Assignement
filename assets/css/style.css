@@ -4,7 +4,9 @@ background-color: #1f1f1f;
 color: beige;
 font-family: 'Questrial', sans-serif;
 }
-
+.badge-pill {
+    background-color: #656ff9;
+}
 .gallery, .contact {
     background-color: #272731;
 }
@@ -91,7 +93,7 @@ label {
 
 .text-paragraph {
     font-size: 1.25rem;
-    /* font-size: 20px; */
+    
 }
 .contact-heading {
     font-size: 1.625rem;
@@ -99,25 +101,10 @@ label {
     /* font-size: 26px; */
 }
 
-/* input[type=text] {
-    
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-   
-  } */
 
-/* input[type=text]:focus {
-    border: 3px solid ;
-    
-  } */
 nav .navbar {
     height: 70px;
-    /* font-size: 18px; */
+    
 }
 
 .vertical-line {
@@ -135,3 +122,22 @@ nav .navbar {
     right: 0;
     padding-top: 5em;
   }
+
+  .carousel-control-next {
+    height:50%;    
+    align-items:end;
+}
+  .btn-circle.btn-xl {
+    width: 60px;
+    height: 60px;
+    padding: 0px 13px;
+    border-radius: 50%;
+    font-size: 35px;
+    text-align: center;
+    border: 3px solid #5156b2 ;
+}
+
+.sucess-alert {
+    font-size: 1.25rem;
+    color: #6971fa;
+}

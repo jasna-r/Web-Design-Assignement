@@ -1,6 +1,13 @@
-// function myFunction(x) {
-//     alert ("!!!");
-//     x.style.border = "#41446d";
-//     x.style.color= "white";
-//     x.style.backgroundColor= "#242430";
-//   }
+function sendSucceessMsg() {
+    let x=document.getElementById("send-success-msg");
+    x.innerText="Form submitted successfully!";
+    return false;
+}
+
+function addToCart() {
+  let currentNum= document.getElementById("cardHolder").innerHTML;
+  let cn=parseInt(currentNum);
+  if(cn)
+  cn++; else cn=1;
+  document.getElementById("cardHolder").innerHTML=cn;
+}
